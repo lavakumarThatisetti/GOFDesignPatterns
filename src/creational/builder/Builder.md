@@ -19,3 +19,12 @@ The problem with this approach is that the Object state will be inconsistent unt
 
 Builder pattern solves the issue with large number of optional parameters and inconsistent state by providing
 a way to build the object step-by-step and provide a method that will actually return the final Object.
+
+Important Considerations
+1. When we have too many optional fields
+2. A different way of defining object immutability
+3. When we want restriction over fields access hierarchy
+
+Here I am talking about Implementing
+1. User Builder ( have required and optional fields)
+2. Car Builder (Normal Builder and Priority Fields Builder)
