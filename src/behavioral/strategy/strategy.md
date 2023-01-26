@@ -14,4 +14,4 @@ Uses
 
 Class Diagram
 
-![img.png](img.png)
+![img.png](strategy.png)

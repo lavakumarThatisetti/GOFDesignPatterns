@@ -6,7 +6,7 @@ will appear to change its class
 idea = "allow the object for changing its behavior without changing its class"
 
 UML Diagram
-![img.png](img.png)
+![state.png](state.png)
 
 In the UML diagram, we see that **Context** class has an associated State which is going to change during program execution.
 

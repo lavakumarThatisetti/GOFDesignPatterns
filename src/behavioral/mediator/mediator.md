@@ -4,6 +4,8 @@ Define an object that encapsulates how a set of objects interact. Mediator promo
 loose coupling by keeping objects from referring to each other explicitly, and it
 lets you vary their interaction independently.
 
+![mediator.png](mediator.png)
+
 **Example:**
 ---------
 Dialog Box
@@ -11,7 +13,7 @@ Dialog Box
 1. Often there are dependencies between the widgets in the dialog. For example,
 a button gets disabled when a certain entry field is empty. Selecting an entry
 in a list of choices called a list box might change the contents of an entry field.
-Conversely typing text into the entry field might automatically select one or more
+Conversely, typing text into the entry field might automatically select one or more
 corresponding entries in the list box. Once text appears in the entry field, other
 buttons may become enabled that let the user do something with the text,such as
 changing or deleting the thing to which it refers.

@@ -1,4 +1,5 @@
-Intent
+**Intent**
+----------
 Ensure a class only has one instance, and provide a global point of access to it.
 
 Types
@@ -9,3 +10,6 @@ Types
 4. Bill Push Singleton
 5. Static Block Singleton
 6. Enum Based Singleton
+
+
+![singleton.png](singleton.png)

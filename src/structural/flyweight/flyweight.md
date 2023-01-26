@@ -1,7 +1,7 @@
 Intent
 ------
-is a behavioral design pattern that lets you fit more objects into the available amount of RAM
-by sharing common parts of state between multiple objects instead of keeping all the data in each object
+*is a behavioral design pattern that lets you fit more objects into the available amount of RAM
+by sharing common parts of state between multiple objects instead of keeping all the data in each object*
 
 
 A flyweight is a shared object that can be used in multiple contexts simultaneously.
@@ -14,8 +14,10 @@ thereby making it sharable.
 2. Extrinsic state depends on and varies with the flyweight's context and therefore can't be shared. Client objects are responsible for 
 passing extrinsic state to the flyweight when it needs it.
 
+![img.png](flyweight.png)
+
 Implementation:
 --------------
-In Flyweight pattern we use a **HashMap** |(or Any Data Set Which serves as Cache) that stores reference to the object which have already been created, 
+In Flyweight pattern we use a `**HashMap** |(or Any Data Set Which serves as Cache)` that stores reference to the object which have already been created, 
 every object is associated with a key. Now when a client wants to create an object, he simply has to pass a key associated with it and
 if the object has already been created we simply get the reference to that object else it creates a new object and then returns it reference to the client.

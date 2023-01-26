@@ -1,6 +1,6 @@
 package creational.prototype;
 
-public class Employee  implements Prototype{
+public class Employee  implements Prototype {
     private final Integer id;
     private final String name;
     private final Integer age;

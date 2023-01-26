@@ -21,6 +21,8 @@ Disadvantages
 3. It can lead to duplicate code across processors, increasing maintenance
 
 
+![cor.png](cor.png)
+
 RealWorld
 1. DoFilter
 2. Logger

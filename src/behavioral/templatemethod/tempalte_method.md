@@ -15,7 +15,7 @@ For the reasons listed below, the template technique is used:
 3. Limit the points at which subclassing is permitted. Unlike a basic polymorphic override, in which the underlying function is completely rebuilt,
    enabling drastic changes to the workflow, just the specifics of the process are permitted to alter.
 
-![img.png](img.png)
+![img.png](tenplate.png)
 
 AbstractClass (Application)
 - defines abstract primitive operations that concrete subclasses define to
@@ -26,13 +26,14 @@ AbstractClass (Application)
 ConcreteClass (MyApplication)
 - implements the primitive operations to carry out subclass-specific steps of the algorithm
 
-Examples
+**Examples**
+
 1. House Construction
-   buildFoundation();
-   buildPillars();
-   buildWalls();
-   buildWindows();
+* buildFoundation();
+* buildPillars();
+* buildWalls();
+* buildWindows();
 2. Build Computer
-   addMotherboard();
-   setupMotherboard();
-   addProcessor();
+* addMotherboard();
+* setupMotherboard();
+* addProcessor();

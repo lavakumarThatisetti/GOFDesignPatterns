@@ -1,9 +1,11 @@
 Intent
 ------
-Composite is a behavioral design pattern that lets you compose objects into tree structures and
-then work with these structures as if they were individual objects.
+*Composite is a behavioral design pattern that lets you compose objects into tree structures and
+then work with these structures as if they were individual objects.*
 
 Simply its object made up of number of objects
+
+![composite.png](composite.png)
 
 Let's see the 4 elements of composite pattern.
 
@@ -24,10 +26,11 @@ Let's see the 4 elements of composite pattern.
 Example Here:
 ------------
 1. 
-   Interface : Employee
-   Developer : Leaf
-   Manager | ProductOwner | CEO : Composite [ contains many nodes ]
-   Driver: Client
-2. Interface : Employee
-   Employer : Leaf and Composite
-   Driver: Client
+- Interface : Employee  
+- Developer : Leaf
+- Manager | ProductOwner | CEO : Composite [ contains many nodes ]
+- Driver: Client 
+2.
+- Interface : Employee
+- Employer : Leaf and Composite
+- Driver: Client
