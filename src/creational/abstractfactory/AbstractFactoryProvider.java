@@ -2,7 +2,7 @@ package creational.abstractfactory;
 
 import creational.abstractfactory.exception.ObjectCreationException;
 
-public class FactoryProvider {
+public class AbstractFactoryProvider {
 
     public static AbstractFactory getFactory(ObjectType objectType){
 

@@ -1,4 +1,4 @@
-package creational.factory.notification;
+package creational.factory.notificationwithoutpattern;
 
 public class Driver {
 
@@ -8,11 +8,15 @@ public class Driver {
                 "9890098900","878787013","Your Mobile OTP : 35654 valid for 10 minus"
         );
 
-        Notification notification = NotificationFactory.getInstance(NotificationType.SMS);
+        Notification notification = new SMSNotification();
 
         notification.sendNotification(attributes);
 
-        notification = NotificationFactory.getInstance(NotificationType.EMAIL);
+        attributes = new NotificationAttributes(
+                "lava@gmail.com","kumar@gmail.com","Your Service OTP : 35654 valid for 10 minus"
+        );
+
+        notification = new EmailNotification();
 
         notification.sendNotification(attributes);
 

@@ -1,7 +1,7 @@
 package creational.singleton;
 
 public class NormalSingleton {
-    private static NormalSingleton obj;
+    private static volatile NormalSingleton obj;
     private NormalSingleton() {}
 
     // It will not guarantee single instance created

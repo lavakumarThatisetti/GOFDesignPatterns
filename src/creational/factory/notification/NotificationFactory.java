@@ -14,6 +14,7 @@ public class NotificationFactory {
     }
 
     public static Notification getInstance(NotificationType notificationType){
+
         return factoryMap.get(notificationType);
     }
 }

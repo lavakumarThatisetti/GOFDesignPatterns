@@ -3,6 +3,12 @@ Intent
 Provide an interface for creating families of related or dependent objects without
 specifying their concrete classes.
 
+_Abstraction over multiple factory patterns_
+
+**Abstraction** is the process of hiding certain details and showing only essential information to the user
+
+Simply Called : Factory for multiple independent factory patterns 
+
 ![img.png](img.png)
 
 Simply we can say abstraction over Multiple Factories

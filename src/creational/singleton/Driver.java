@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public class Driver {
     public static void main(String[] args) {
@@ -21,6 +22,8 @@ public class Driver {
             // or in the calling thread, at the discretion of the Executor implementation.
             executor.execute(worker);
         }
+        awaitTerminationAfterShutdown(executor);
+        executor = Executors.newFixedThreadPool(100);
         System.out.println("Double Lock");
         System.out.println("Total Created Instances: ");
         set = new HashSet<>();
@@ -63,5 +66,17 @@ public class Driver {
             System.out.println(singleton.hashCode());
         }
 
+    }
+
+    public static void awaitTerminationAfterShutdown(ExecutorService service) {
+        service.shutdown();
+        try {
+            if (!service.awaitTermination(60, TimeUnit.SECONDS)) {
+                service.shutdownNow();
+            }
+        } catch (InterruptedException ex) {
+            service.shutdownNow();
+            Thread.currentThread().interrupt();
+        }
     }
 }

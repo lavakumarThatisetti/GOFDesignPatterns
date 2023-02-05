@@ -15,3 +15,8 @@ Types
 ![singleton.png](singleton.png)
 
 most commonly used design pattern 
+
+Applications 
+1. when managing access to a resource which is shared by the entire application
+2. Singleton pattern is used for logging, drivers objects, caching, and thread pool
+3. **Real World Example** : sharing a single washing machine among all the residents in a hotel or sharing a single appliance like refrigerator among all the family members

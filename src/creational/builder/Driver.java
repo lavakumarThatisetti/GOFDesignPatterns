@@ -1,5 +1,6 @@
 package creational.builder;
 
+import creational.builder.withoutpriorityfields.Car;
 import creational.builder.withpriorityfields.CarBuilder;
 
 public class Driver {

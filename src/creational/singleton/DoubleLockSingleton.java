@@ -2,6 +2,8 @@ package creational.singleton;
 
 
 public class DoubleLockSingleton {
+    // Volatile keyword is used to modify the value of a variable by different threads
+    // It means that multiple threads can use a method and instance of the classes at the same time without any problem
     private static volatile DoubleLockSingleton instance;
 
     private DoubleLockSingleton() {
@@ -28,7 +30,7 @@ public class DoubleLockSingleton {
         if (instance == null) {
             synchronized (DoubleLockSingleton.class) {
                 // Double check
-                if (instance == null) {
+                if (instance == null) { // T1 - Obj
                     instance = new DoubleLockSingleton();
                 }
             }

@@ -10,7 +10,7 @@ Instance is created irrespective of it is required in runtime or not.
 If this instance is not big object, and you can live with it being unused, this is best approach.
  */
 public class EagerSingleton {
-    private static volatile EagerSingleton obj = new EagerSingleton();
+    private static final EagerSingleton obj = new EagerSingleton();
 
     private EagerSingleton() {}
 
