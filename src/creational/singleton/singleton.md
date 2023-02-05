@@ -13,3 +13,5 @@ Types
 
 
 ![singleton.png](singleton.png)
+
+most commonly used design pattern 
