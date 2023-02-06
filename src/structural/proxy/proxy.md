@@ -22,9 +22,9 @@ Virtual Proxy:
 The virtual proxy design pattern is used to preserve memory from being allotted to an object that may not be used
 in the future. Until the object is not used, a light copy of the object (that contains the required details)
 is created and shown to the user.
-eg: 1. Creating Object On Demand ( Creating Object When call Check SingleTon Replace in Proxy Class)
-    2. Show Minimum Required - (On Demand Show Full Details - We Discussed here)
-    3. Acts as a Cache Layer ( Chrome storing recent search data in ur local internal storage)
+1. Creating Object On Demand ( Creating Object When call Check SingleTon Replace in Proxy Class)
+2. Show Minimum Required - (On Demand Show Full Details - We Discussed here)
+3. Acts as a Cache Layer ( Chrome storing recent search data in ur local internal storage)
 
 Protection proxy:
 -----------------

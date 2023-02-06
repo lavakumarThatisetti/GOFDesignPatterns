@@ -7,6 +7,5 @@ public class Driver {
     public static void main(String[] args) {
         Client client = new Client(new Adaptor(new XMLVendor()));
         System.out.println(client.apiCallToVendor());
-
     }
 }

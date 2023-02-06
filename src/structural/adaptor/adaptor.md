@@ -15,6 +15,8 @@ In this example we used Object Adapter. To use Class Adapter we required Multipl
 
 Also using Class Adapter is violating principle of "Use composition Over Inheritance"
 
+![adaptor](adaptor_sketch.png)
+
 ![img.png](adaptor.png)
 
 Try This.
