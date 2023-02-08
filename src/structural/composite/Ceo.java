@@ -3,7 +3,7 @@ package structural.composite;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ceo implements Employee{
+public class Ceo implements Employee {
 
     private final String name;
     private final int empId;

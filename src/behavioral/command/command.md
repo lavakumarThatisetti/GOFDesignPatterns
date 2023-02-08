@@ -7,6 +7,7 @@ Also, Known As - `Action, Transaction`
 
 ![img.png](command.png)
 
+![Iterator](command_sketch.png)
 **Applicability**
 -
 

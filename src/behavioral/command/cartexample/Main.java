@@ -24,7 +24,11 @@ public class Main {
         for (CartCommandExecutor cartCommandExecutor : cartCommandExecutorList) {
 
             if (cartCommandExecutor.isApplicable(cartCommandType)) {
-                cartCommandExecutor.execute("1", "1", "1");
+                cartCommandExecutor.execute("lava", "Bawaachi", "Biryani");
+            }
+
+            if (cartCommandExecutor.isApplicable(CartCommandType.REMOVE_ITEM)) {
+                cartCommandExecutor.execute("lava", "Bawaachi", "Biryani");
             }
         }
     }

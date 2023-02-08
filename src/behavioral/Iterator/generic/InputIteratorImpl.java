@@ -2,24 +2,24 @@ package behavioral.Iterator.generic;
 
 public class InputIteratorImpl<E> implements InputIterator<E> {
 
-    Object[] heroes;
+    Object[] objects;
     int cursor;
     int length;
 
-    InputIteratorImpl(Object[] heroes){
-        this.heroes = heroes;
+    InputIteratorImpl(Object[] objects){
+        this.objects = objects;
         cursor = 0;
-        length = heroes.length;
+        length = objects.length;
     }
 
     @Override
     public boolean hasNext() {
-        return cursor < heroes.length;
+        return cursor < objects.length;
     }
 
     @Override
     @SuppressWarnings("unchecked")
     public E next() {
-        return (E) heroes[cursor++];
+        return (E) objects[cursor++];
     }
 }

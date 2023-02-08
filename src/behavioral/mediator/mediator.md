@@ -6,6 +6,7 @@ lets you vary their interaction independently.
 
 ![mediator.png](mediator.png)
 
+![mediator](mediator_sketch.png)
 **Example:**
 ---------
 Dialog Box

@@ -41,10 +41,10 @@ public class Employeer implements Employee {
     @Override
     public String toString() {
         return position.toString()+" {" +
-                "name='" + name + '\'' +
+                "name='" + name + '\''+
                 ", empId=" + empId +
-                ", position='" + position + '\'' +
-                ", reportingEmployees=" + reportingEmployees +
+                ", position='" + position + '\n' +
+                ", reportingEmployees=" + reportingEmployees + '\n'+
                 '}';
     }
 }

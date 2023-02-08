@@ -29,6 +29,8 @@ public class Driver {
 
         c.printEmployeeDetails();
 
+        dev1.printEmployeeDetails();
+
 
 
     }

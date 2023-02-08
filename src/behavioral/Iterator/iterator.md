@@ -9,3 +9,5 @@ and put it into an iterator object.
 for keeping track of the current element; that is, it knows which elements have been traversed already.
 
 ![iterator.png](iterator.png)
+
+Overall, the Iterator design pattern is a useful tool for encapsulating the logic for accessing elements of a collection, making it easier to write code that works with a variety of different collections in a uniform manner.

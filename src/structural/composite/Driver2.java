@@ -2,8 +2,8 @@ package structural.composite;
 
 public class Driver2 {
     public static void main(String[] args) {
-        Employeer dev1 = new Employeer(1, "Mark", Position.DEVELOPER);
-        Employeer dev2 = new Employeer(2, "Elon", Position.SENIOR_DEVELOPER);
+        Developer dev1 = new Developer(1, "Mark", Position.DEVELOPER);
+        Developer dev2 = new Developer(2, "Elon", Position.SENIOR_DEVELOPER);
 
         Employeer man1 = new Employeer(200, "Sundar Pichai", Position.MANAGER);
         Employeer man2 = new Employeer(201, "Satya Nadal ", Position.MANAGER);
@@ -13,7 +13,6 @@ public class Driver2 {
 
 
         Employeer c = new Employeer(1, "Lava Kumar",Position.CEO);
-
 
         man1.addEmployee(dev1);
         man2.addEmployee(dev2);

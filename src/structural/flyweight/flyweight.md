@@ -8,11 +8,22 @@ A flyweight is a shared object that can be used in multiple contexts simultaneou
 The flyweight acts as an independent object in each context—it's indistinguishable from an instance of the object that's not shared.
 Flyweights cannot make assumptions about the context in which they operate.
 
+This allows for a reduction in memory usage and improved overall performance.
+
+
 The key concept here is the distinction between intrinsic and extrinsic state.
-1. Intrinsic state is stored in the flyweight; it consists of information that's independent of the flyweight's context,
-thereby making it sharable. 
-2. Extrinsic state depends on and varies with the flyweight's context and therefore can't be shared. Client objects are responsible for 
-passing extrinsic state to the flyweight when it needs it.
+1. Intrinsic state refers to the information that is stored within the shared object, which is common to all objects that use the shared object. This information is usually immutable, meaning it cannot be changed, and is usually shared among many objects to reduce memory usage.
+
+2. Extrinsic state, on the other hand, refers to the information that is unique to each individual object and cannot be shared among objects. This information is stored outside of the shared object and is passed as arguments to methods on the shared object when needed.
+
+3. In other words, intrinsic state is the information that is stored in the shared object and is common to all objects that use it, while extrinsic state is the information that is unique to each individual object and is stored outside of the shared object.
+
+4. By separating the object's state into intrinsic and extrinsic state, the Flyweight Design Pattern allows for a reduction in memory usage and improved performance, as the intrinsic state is shared among multiple objects, while the extrinsic state is stored only once for each individual object.
+
+
+
+
+
 
 ![img.png](flyweight.png)
 

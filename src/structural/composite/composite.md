@@ -7,6 +7,8 @@ Simply its object made up of number of objects
 
 ![composite.png](composite.png)
 
+![composite](composite_org.png)
+
 Let's see the 4 elements of composite pattern.
 
 1) **Component**

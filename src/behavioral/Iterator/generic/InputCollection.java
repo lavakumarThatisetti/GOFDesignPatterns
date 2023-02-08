@@ -2,20 +2,20 @@ package behavioral.Iterator.generic;
 
 public class InputCollection<T> {
 
-    Object[] heroes;
+    Object[] objects;
     int index;
 
     public InputCollection(int n){
-        heroes = new Object[n];
+        objects = new Object[n];
         index = 0;
     }
 
-    public void addData(Input hero){
-        heroes[index] = hero;
+    public void addData(Input object){
+        objects[index] = object;
         index++;
     }
 
     public InputIterator<T> iterator(){
-        return new InputIteratorImpl<T>(heroes);
+        return new InputIteratorImpl<T>(objects);
     }
 }
