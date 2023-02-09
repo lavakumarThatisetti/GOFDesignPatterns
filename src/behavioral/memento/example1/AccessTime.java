@@ -1,6 +1,6 @@
 package behavioral.memento.example1;
 
-// Originator
+// Originator - is the object whose state we want to save and restore
 public class AccessTime {
     private String time;
 

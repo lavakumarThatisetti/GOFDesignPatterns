@@ -1,25 +1,26 @@
 package behavioral.memento.example2;
 
+// Originator
 public class TextWindow {
-    private StringBuilder currentText;
+    private StringBuilder state;
 
     public TextWindow() {
-        this.currentText = new StringBuilder();
+        this.state = new StringBuilder();
     }
 
-    public void addText(String text) {
-        currentText.append(text);
+    public void setState(String text) {
+        state.append(text);
     }
 
-    public TextWindowState save() {
-        return new TextWindowState(currentText.toString());
+    public TextWindowMemento saveStateToMemento() {
+        return new TextWindowMemento(state.toString());
     }
 
-    public void restore(TextWindowState save) {
-        currentText = new StringBuilder(save.getText());
+    public void restoreStateFromMemento(TextWindowMemento save) {
+        state = new StringBuilder(save.getState());
     }
 
-    public StringBuilder getCurrentText() {
-        return currentText;
+    public StringBuilder getState() {
+        return state;
     }
 }

@@ -1,5 +1,6 @@
 package behavioral.memento.example1;
 
+// Caretaker - responsible for saving and restoring the state of the Originator.
 public class Checkpoint {
     AccessTime accessTime;
     TimeState timeState;

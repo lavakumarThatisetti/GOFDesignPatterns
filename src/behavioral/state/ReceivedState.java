@@ -14,6 +14,6 @@ public class ReceivedState implements PackageState {
 
     @Override
     public void printStatus() {
-        System.out.println("Delivered");
+        System.out.println("Recived");
     }
 }

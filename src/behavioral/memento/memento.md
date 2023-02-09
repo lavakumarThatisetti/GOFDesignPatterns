@@ -22,6 +22,9 @@ the memento is "opaque" to other objects
 
 ![memento.png](memento.png)
 
+Example:
+
+![Memento](memento_sketch.png)
 Practically, the object whose state needs to be saved is called an **Originator**.
 The **Caretaker** is the object triggering the save and restore of the state, which is called the **Memento**.
 
