@@ -8,3 +8,7 @@ used to decouple the logic/algorithm from the objects on which they operate. The
 Each visitor is responsible for performing a specific operation.
 
 ![img.png](visitor.png)
+
+Explanation
+
+![exp](visitor_exp.png)

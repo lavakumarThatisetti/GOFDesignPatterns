@@ -9,7 +9,6 @@ public class Main {
 
         shapes.add(new Circle(10));
         shapes.add(new Square(10));
-        shapes.add(new Square(5));
         shapes.add(new Rectangle(10, 2));
 
         final AreaVisitor areaVisitor = new AreaVisitor();
