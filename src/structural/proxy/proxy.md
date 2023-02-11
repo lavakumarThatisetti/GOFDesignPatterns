@@ -11,9 +11,7 @@ A proxy controls access to the original object, allowing you to perform somethin
 
 Remote Proxy:
 --------------
-With Remote Proxy, the proxy acts as a local representative for an object that lives in a different JVM.
-A method call on the proxy results in the call being transferred over the wire, invoked remotely,
-and the result being returned to the proxy and then to the Client
+A remote proxy represents an object located in a different address space, such as a networked server. The proxy acts as a representative of the remote object and handles communication between the local client and the remote object
 
 ![img.png](img.png)
 
@@ -33,3 +31,6 @@ in applications that have access to that resource and then get the result back.
 2. When we access to website over internet and for some websites which are malicious are usually blocked in some orgs
 and workplaces. Here They have implemented protection proxy. The proxy first checks the host you are connecting to,
 if it is not part of restricted site list, then it connects to the real internet
+
+
+![Explanation](proxy.drawio.png)

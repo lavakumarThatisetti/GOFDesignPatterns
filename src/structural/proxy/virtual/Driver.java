@@ -12,11 +12,11 @@ public class Driver {
         Book harryPotterBook = new OriginalBook("Harry Potter","JK Rowling","description.. The Boy Who lived",
                 5, true);
 
-        Book book =  new ProxyBook(harryPotterBook);
+        Book proxyBook =  new ProxyBook(harryPotterBook);
 
-        book.showInfo();
+        proxyBook.showInfo();
 
-        ((ProxyBook)book).click();
+        ((ProxyBook)proxyBook).click();
     }
 
 }
